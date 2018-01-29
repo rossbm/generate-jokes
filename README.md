@@ -2,7 +2,7 @@
 This repository will host my work on generating jokes using the r/jokes corpus. It is a follow up to my capstone project for Udacity's Machine Learning Nanodegree. The ultimate goal is to deploy it as either a twitter or reddit bot.
 
 ## Topics
-The first scropt/notebook generates topic vectors using non-negative matrix factorization. The topic vectors have 32 dimensions.
+The first script/notebook generates topic vectors using non-negative matrix factorization. The topic vectors have 32 dimensions.
 
 Here are the top 20 most influential words per topic dimension:
 
