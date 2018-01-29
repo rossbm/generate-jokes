@@ -6,9 +6,7 @@ This repository will host my work on generating jokes using the r/jokes corpus. 
 ## Corpus
 
 ## Topics
-The first script/notebook generates topic vectors using non-negative matrix factorization. The topic vectors have 32 dimensions.
-
-The following table diplays the the top 20 most influential words per topic dimension. Warning, it contains some vulgar words.
+The first script/notebook generates topic vectors using non-negative matrix factorization. The topic vectors have 32 dimensions. The following table diplays the the top 20 most influential words per topic dimension.
 
 |Dimension | Words |
 |----------|-------|
