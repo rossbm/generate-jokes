@@ -1,5 +1,9 @@
 # generate-jokes
-This repository will host my work on generating jokes using the r/jokes corpus. It is a follow up to my capstone project for Udacity's Machine Learning Nanodegree. The ultimate goal is to deploy it as either a twitter or reddit bot.
+This repository will host my work on generating jokes using the r/jokes corpus. It is a follow up to my capstone project for Udacity's Machine Learning Nanodegree. The ultimate goal is to deploy it as either a bot or on a personal website. Due to the nature of the domain, one should be prepared for vulgarity.
+
+## How to use
+
+## Corpus
 
 ## Topics
 The first script/notebook generates topic vectors using non-negative matrix factorization. The topic vectors have 32 dimensions.
@@ -40,3 +44,5 @@ The following table diplays the the top 20 most influential words per topic dime
 29|wife,husband,want,die,home,happy,ask,night,meet,leave,love,sleep,car,house,job,bed,fat,ex,honey,cheat
 30|year,old,come,santa,sack,lady,big,today,vision,happy,new,live,claus,ago,meet,time,common,kid,child,day
 31|blind,fall,german,hard,eye,table,chair,skydive,dinosaur,step,nudist,scar,lady,date,tree,prostitute,deer,beach,colony,spot
+
+## Example Outputs
