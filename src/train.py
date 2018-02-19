@@ -5,11 +5,13 @@ import h5py
 from keras.optimizers import Nadam
 import numpy as np
 from tqdm import tqdm
-import helpers 
 
+#add parent directory of script to python path so that it is always possible to import helpers
+sys.path.insert(0, os.path.abspath(os.path.join(__file__, os.pardir)))
+import helpers
 
 CHARS_SEQS_PATH = "data/processed/char_sequences.h5"
-CHAR_DICT_PATH = "data/processed/char_dict.pkl"
+CHAR_DICT_PATH = "models/char_dict.pkl"
 BATCH_SIZE=512
 RNN_DEPTH = 3
 SEQ_LENGTH = 300
@@ -17,10 +19,12 @@ TRAINING_MODEL_PATH = "models/joke_gen_rnn.h5"
 PREDICT_MODEL_PATH = "models/joke_gen_rnn_predict.h5"
 BATCHES_PER_EPOCH = 250
 DROPOUT_R = 0.1
-NUM_EPOCHS = 1
+NUM_EPOCHS = 150
 
 if __name__ == "__main__":
-    os.chdir(os.path.join(__file__, os.pardir, os.pardir))
+    #change directory to grandparent of the script so that paths work
+    os.chdir(os.path.abspath(os.path.join(__file__, os.pardir, os.pardir)))
+    print("Changed directory to {}".format(os.getcwd()))
 
     if not os.path.exists(CHARS_SEQS_PATH):
         print("Processed input not found. Jokes will be downloaded and processed")
